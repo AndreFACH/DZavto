@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук</title>
+    <style>
+        table {
+           table-layout: fixed;
+           width: 100%;
+           border-collapse: collapse;
+           border: 3px solid purple;
+         }
+         table, th, td {
+           border: 1px solid black;
+       } 
+       table {
+           border-spacing: 5px;
+       }      
+      </style> 
+</head>
+<body>
+    <h1>Пошук</h1>
+    <form action="https://fom.in.ua/echo" method="GET">
+        <fieldset>
+           <legend><b>Тип кузова</b></legend>
+            <div>
+                <label for="body"> Універсал</label>                
+                <input type="checkbox" name="body" id="body" value="1">
+                <label for="body1"> Седан</label>
+                <input type="checkbox" name="body1" id="body1" value="2">
+                <label for="body2"> Хетчбек</label>             
+                <input type="checkbox" name="body1" id="body2" value="3">
+               
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><b>Марка авто</b></legend>
+                <select>
+                    <option value="Вольво">Вольво</option>
+                    <option value="Мерседес">Мерседес</option>
+                    <option value="БМВ">БМВ</option>
+                    <option value="Ауді">Ауді</option>
+                    <option value="Шкода">Шкода</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend><b>Країна виробник</b></legend>
+            <select >
+                <option value="Швеція">Швеція</option>
+                <option value="Німедчина">Німедчина</option>
+                <option value="Чехія">Чехія</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><b>Ціна</b></legend>
+           <p>
+            <label for="number">Від</label>         
+            <input id="number" type="number" placeholder="Від" name="Від" min="0"><br>  
+           </p> 
+           <p>
+            <label for="number1">До</label>         
+            <input id="number1" type="number" placeholder="До" name="До" min="0"><br> 
+           </p> 
+        </fieldset>
+        <fieldset>
+            <legend><b>Рік випуску</b></legend>
+            <select>
+                <option value="1999">1999</option>                
+                <option value="2000">2000</option>                
+                <option value="2001">2001</option>                
+                <option value="2002">2002</option>                
+                <option value="2003">2003</option>                
+                <option value="2004">2004</option>                
+                <option value="2005">2005</option>                
+                <option value="2006">2006</option>                
+            </select>
+            <select >
+                <option value="1999">1999</option>                
+                <option value="2000">2000</option>                
+                <option value="2001">2001</option>                
+                <option value="2002">2002</option>                
+                <option value="2003">2003</option>                
+                <option value="2004">2004</option>                
+                <option value="2005">2005</option>                
+                <option value="2006">2006</option>                
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><b>Стан</b></legend>
+            <label for="stan1">Нoва</label>
+            <input id="stan1" type="radio" name="stan">
+            <label for="stan2">Б/У</label>
+            <input id="stan2" type="radio" name="stan">
+        </fieldset>
+        <fieldset>
+            <legend><b>Тип палива</b></legend>
+            <label for="stan3">Газ/Бензин</label>
+            <input id="stan3" type="radio" name="stan1">
+            <label for="stan4">Бензин</label>
+            <input id="stan4" type="radio" name="stan1">
+            <label for="stan5">Дизель</label>
+            <input id="stan5" type="radio" name="stan1">
+        </fieldset>
+        <fieldset>
+            <legend><b>Тип коробки передач</b></legend>
+            <label for="body9"> Автомат</label>                
+            <input type="checkbox" name="body3" id="body9" value="1">
+            <label for="body3"> Механічна</label>
+            <input type="checkbox" name="body3" id="body3" value="2">
+        </fieldset>
+        <fieldset>
+            <legend><b>Колір</b></legend>
+            <label for="color">Колір</label>
+            <input type="color" name="color" id="color">
+        </fieldset>
+        <fieldset>
+            <legend><b>Комфорт</b> </legend>
+            <label for="body4">Кондиціонер</label>                
+            <input type="checkbox" name="body4" id="body4">
+            <label for="body5">Електросклопідйомники</label>
+            <input type="checkbox" name="body4" id="body5">
+            <label for="body6">Круїз контроль</label>             
+            <input type="checkbox" name="body4" id="body6">
+            <label for="body7">Запасне колесо</label>             
+            <input type="checkbox" name="body4" id="body7">            
+        </fieldset>
+    <p>
+        <input type="submit" value="Відправити">
+        <input type="reset" value="Видалити">
+    </p>
+   </form>
+</body>
+</html>
